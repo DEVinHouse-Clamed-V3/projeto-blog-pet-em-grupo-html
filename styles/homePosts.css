@@ -1,0 +1,65 @@
+.titulo {
+    height: 50px;
+    background-color: 	#062271;
+    display: flex;
+    justify-content: space-between;
+    margin: 25px auto;
+    margin-top: 1px;
+   
+}
+
+.titulo h3{
+    margin-left: 5px;
+    color: #FFF;
+    font-size: 12px;
+    font-weight: bold;  
+}
+.titulo a{
+    margin-top: 10px;
+    color: #FFF;
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 10px;
+
+}
+.menu{
+    font-weight: bold;
+    font-size: 12px;
+    margin-left: -20px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.menu button{
+    color: #FFF;
+    background-color:#FF6400 ;
+    border-radius: 8px;
+}
+.card-inserir{
+    
+    background-color:#E0E0E0;
+}
+.card-sobreposto{
+    background-color: aqua;
+    width: 70%;
+    margin: 25px auto;
+    display: block;
+    border: 10px ;
+      
+}
+
+.card-sobreposto h4{
+    font-weight: bold;
+}
+.card-sobreposto button{
+    color: #FFF;
+    background-color:#062271 ;
+}
+.rodape{
+    margin-top: 10px;
+    padding: 100px;
+    background-color: 	#062271;
+
+}
+
