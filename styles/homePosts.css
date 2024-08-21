@@ -1,20 +1,21 @@
 .titulo {
     height: 50px;
-    background-color: 	#062271;
+    background-color: #062271;
     display: flex;
     justify-content: space-between;
     margin: 25px auto;
     margin-top: 1px;
-   
+
 }
 
-.titulo h3{
+.titulo h3 {
     margin-left: 5px;
     color: #FFF;
     font-size: 12px;
-    font-weight: bold;  
+    font-weight: bold;
 }
-.titulo a{
+
+.titulo a {
     margin-top: 10px;
     color: #FFF;
     font-size: 12px;
@@ -22,44 +23,90 @@
     margin-right: 10px;
 
 }
-.menu{
+
+.menu {
     font-weight: bold;
     font-size: 12px;
     margin-left: -20px;
     margin-right: 10px;
     display: flex;
     justify-content: space-between;
-    
+
 }
-.menu button{
+
+.menu button {
     color: #FFF;
-    background-color:#FF6400 ;
+    background-color: #FF6400;
     border-radius: 8px;
 }
-.card-inserir{
-    
-    background-color:#E0E0E0;
+
+.card-inserir {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #E0E0E0;
 }
-.card-sobreposto{
-    background-color: aqua;
-    width: 70%;
+
+.card-container {
+    width: 100%;
     margin: 25px auto;
     display: block;
-    border: 10px ;
-      
+    border: 10px;
+    text-align: left;
 }
 
-.card-sobreposto h4{
+.card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+
+.card-1 {
+    z-index: 2;
+    width: 80%;
+    margin-left: 70px;
+    background-color: #FFF;
+    padding: 20px;
+}
+
+.card-1 button {
+    color: #FFF;
+    background-color: #062271;
+}
+
+
+.card-2 {
+    z-index: 1;
+    width: 100%;
+    margin-top: 70px;
+    background-color: #062271;
+}
+
+.card-1 h4 {
     font-weight: bold;
 }
-.card-sobreposto button{
-    color: #FFF;
-    background-color:#062271 ;
+.container-posts {
+    display: flex;
+    flex-wrap: wrap;
+    /*esta dizendo que se não couber na tela não use scroll...joque pra baixo*/
+    justify-content: space-evenly;
+    gap: 10px;
+    /*descola um elemento do outro */
 }
-.rodape{
-    margin-top: 10px;
-    padding: 100px;
-    background-color: 	#062271;
+.item-post {
+    background-color: #FFF;
+    border-radius: 8px;
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #000;
 
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; alinha as colunas */
+    align-items: center;
+    /*alinha a horizontal*/
 }
-
