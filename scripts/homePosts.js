@@ -18,7 +18,7 @@ function carregarDados() {
         div.append(h3)
 
         const h2 = document.createElement("h2")
-        h2.innerText = post.descricao
+        h2.innerText = post.titulo
         div.append(h2)
 
         const h5 = document.createElement("h5")
