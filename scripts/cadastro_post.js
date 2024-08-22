@@ -7,7 +7,7 @@ function cadastrarPost(event) {
         id: Date.now(),
         titulo: document.getElementById('titulo').value,
         descricao: document.getElementById('descricao').value,
-        dataCriacao: new Date().toLocaleDateString(),  
+        dataCriacao: new Date().toISOString().split('T')[0],  
         categoria: document.getElementById('categoria').value,
         foto: document.getElementById('foto').value
     };
