@@ -8,22 +8,22 @@ function carregarDados() {
         div.classList.add("item-post")/*geração da div e atribuição da classe*/
 
         const img = document.createElement("img")
-        img.setAttribute("width", "150px")
+        img.setAttribute("width", "100px")
         img.setAttribute("src", post.foto)
 
         div.append(img)
 
-        const h3 = document.createElement("h3")
-        h3.innerText = post.tipo
-        div.append(h3)
-
-        const h2 = document.createElement("h2")
-        h2.innerText = post.titulo
-        div.append(h2)
-
         const h5 = document.createElement("h5")
-        h5.innerText = post.dataCriacao
+        h5.innerText = post.tipo
         div.append(h5)
+
+        const h4 = document.createElement("h4")
+        h4.innerText = post.titulo
+        div.append(h4)
+
+        const h6 = document.createElement("h6")
+        h6.innerText = post.dataCriacao
+        div.append(h6)
 
         lista.append(div)
 
