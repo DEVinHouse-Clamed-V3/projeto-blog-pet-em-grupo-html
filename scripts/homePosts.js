@@ -8,8 +8,10 @@ function carregarDados() {
         div.classList.add("item-post")/*geração da div e atribuição da classe*/
 
         const img = document.createElement("img")
-        img.setAttribute("width", "100px")
+        img.setAttribute("width", "120px")
         img.setAttribute("src", post.foto)
+        img.addEventListener('dblclick', () => {
+            window.location.href = "././post.html"});
 
         div.append(img)
 
@@ -41,6 +43,5 @@ function carregarDados() {
 
 
 }
-
 
 document.addEventListener("DOMContentLoaded", carregarDados) /*dom funciona quando a pagina for renderizada, dispara a função*/

@@ -66,7 +66,7 @@
     width:80%;
     height: 25%;
     margin-left: 80px;
-    background-color: #FFF;
+    background-color: #E0E0E0;
     padding: 20px;
     font-size: 8px;
 }
@@ -114,4 +114,7 @@
     flex-direction: row;
     gap: 15px;
     font-size: 12px;
+}
+img{
+    cursor: pointer
 }
