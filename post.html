@@ -9,36 +9,23 @@
   </head>
   <body>
     <div class="container">
-        <h1>Titulo do post</h1>
+        <h1 id="titulo"></h1>
         <div class="img-container">
-            <img
-              src="https://uhssetimes.com/wp-content/uploads/2024/04/group-portrait-of-adorable-puppies-royalty-free-image-1687451786.jpg" class="post-img"
-            />
+            <img class="post-img" id="foto"/>
         </div>
         <hr />
-        <p class="content-description">
-          Cuidar do seu cão vai além de apenas alimentá-lo e levá-lo para
-          passear. É essencial garantir que ele receba o amor, atenção e os
-          cuidados necessários para uma vida saudável e feliz. Isso inclui
-          visitas regulares ao veterinário, uma alimentação balanceada e
-          adequada à sua idade e porte, além de atividades físicas que ajudam a
-          manter o corpo e a mente do seu amigo sempre ativos. Não se esqueça da
-          importância da socialização, permitindo que ele interaja com outros
-          cães e pessoas, o que contribui para um comportamento mais
-          equilibrado. Além dos cuidados físicos, é fundamental dedicar tempo
-          para fortalecer o vínculo com seu cão. Brincadeiras, carinhos e
-          momentos de treinamento são oportunidades para construir uma relação
-          de confiança e amor mútuo. Lembre-se de que cada cão é único, com suas
-          próprias necessidades e preferências. Observe os sinais que ele dá e
-          adapte os cuidados conforme necessário. Ao garantir que todas as suas
-          necessidades sejam atendidas, você estará proporcionando uma vida
-          longa e feliz ao seu fiel companheiro.
+        <p class="content-description" id="descricao">
         </p>
         <hr />
-        <div class="container-category">
-          <p class="created-in">Criado em: data</p>
-          <p class="post-category">#categoria</p>
+        <div class="container-end">
+          <button class="btn-voltar" id="botao">Voltar</button>
+          <div class="container-category">
+            <p class="created-in">Criado em: <span id="data-criacao"></span></p>
+            <p class="post-category">#<span id="categoria">categoria</span></p>
+          </div>
         </div>
     </div>
+
+    <script src="scripts/ver_post.js"></script>
   </body>
 </html>
