@@ -109,3 +109,9 @@
     align-items: center;
     /*alinha a horizontal*/
 }
+.item-data{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    font-size: 12px;
+}

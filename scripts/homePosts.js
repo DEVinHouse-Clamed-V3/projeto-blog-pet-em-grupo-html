@@ -21,9 +21,17 @@ function carregarDados() {
         h4.innerText = post.titulo
         div.append(h4)
 
+        const div1 = document.createElement("div1")
+        div1.classList.add("item-data")
+        div.append(div1)
+
         const h6 = document.createElement("h6")
         h6.innerText = post.dataCriacao
-        div.append(h6)
+        div1.append(h6)
+
+        const h7 = document.createElement("h7")
+        h7.innerText = (post.descricao.length/200)+" minutos"
+        div1.append(h7)
 
         lista.append(div)
 
