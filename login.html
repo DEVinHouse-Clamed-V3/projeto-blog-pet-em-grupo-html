@@ -1,11 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./styles/login.css">
+    <title>tela de login</title>
 </head>
+
 <body>
-    
+    <header>
+        <h1>Blog Pet</h1>
+
+    </header>
+    <main>
+        <section class="container">
+            <h2>Faça login na sua conta</h2>
+
+            <form id="" autocomplete="off">
+                <div class="mb20">
+                    <label class="mb5" for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="Informe o seu e-mail">
+                    <span class="error" id="errorEmail"></span>
+                </div>
+
+                <div>
+                    <label class="mb5" for="senha">Senha</label>
+                    <input type="password" id="senha" placeholder="Informe a sua senha">
+                    <span class="error" id="errorSenha"></span>
+                </div>
+
+                <div class="details mb20">
+                    <div class="rememberMe">
+                        <label for="rememberMe">Lembrar de mim</label>
+                        <input type="checkbox" id="rememberMe">
+                    </div>
+                    <a href="" class="esqueceuSenha">Esqueceu sua senha?</a>
+                </div>
+
+                <button type="submit">Entrar</button>
+            </form>
+        </section>
+
+        <div class="containerDeBaixo">
+            <span>Novo usuário? <a href="criar_conta.html">Criar Conta</a></span>
+        </div>
+
+    </main>
 </body>
+
 </html>
