@@ -1,51 +1,62 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Novo Post</title>
     <link rel="stylesheet" href="styles/main.css">
 </head>
+
 <body>
-    
-    <nav class="nav">
-        <ul>
-            <li><a href="cadastro_post.html">Criar Post</a>
-            <li><a href="listagem_post_admin.html">Listagem</a>
-        </ul>
-    </nav>
+    <header class="text-center">
+        <a href="index.html">
+            <h1>Pet Blog</h1>
+        </a>
+    </header>
 
-    <div class="container">
-        <h1>Novo Post</h1>
-        <form id="postForm">
-            <div class="form-group">
-                <label for="titulo">Título</label>
-                <input type="text" id="titulo" name="titulo" required>
+    <main>
+        <div class="container">
+            <div class="topo-tabela">
+                <h2>Cadastrar Novo Post</h2>
+                <a href="listagem_post_admin.html">Listagem Posts</a>
             </div>
 
-            <div class="form-group">
-                <label for="descricao">Descrição</label>
-                <textarea id="descricao" name="descricao" rows="4" required></textarea>
-            </div>
+            <form id="postForm" autocomplete="off">
+                <div class="form-group mb20">
+                    <label for="titulo">Título</label>
+                    <input type="text" id="titulo" name="titulo" required placeholder="Adicione um título">
+                </div>
 
-            <div class="form-group">
-                <label for="categoria">Categoria</label>
-                <select id="categoria" name="categoria" required>
-                    <option value="CÃES">CÃES</option>
-                    <option value="GATOS">GATOS</option>
-                    <option value="PÁSSAROS">PÁSSAROS</option>
-                    <option value="DIVERSOS">DIVERSOS</option>
-                </select>
-            </div>
+                <div class="form-group mb20">
+                    <label for="descricao">Descrição</label>
+                    <textarea id="descricao" name="descricao" rows="4" required
+                        placeholder="Adicione uma descrição"></textarea>
+                </div>
 
-            <div class="form-group">
-                <label for="foto">URL da Foto</label>
-                <input type="url" id="foto" name="foto" required>
-            </div>
+                <div class="form-group mb20">
+                    <label for="categoria">Categoria</label>
+                    <select id="categoria" name="categoria" required>
+                        <option value="SELECIONE">Selecione uma opção</option>
+                        <option value="CÃES">Cães</option>
+                        <option value="GATOS">Gatos</option>
+                        <option value="PÁSSAROS">Pássaros</option>
+                        <option value="PÁSSAROS">Répteis</option>
+                        <option value="DIVERSOS">Outros</option>
+                    </select>
+                </div>
 
-            <button type="submit">Salvar Post</button>
-        </form>
-    </div>
+                <div class="form-group mb20">
+                    <label for="foto">URL da Foto</label>
+                    <input type="url" id="foto" name="foto" required placeholder="Adicione uma imagem">
+                </div>
+
+                <button class="mb30" type="submit">Salvar Post</button>
+            </form>
+        </div>
+
+    </main>
     <script src="scripts/cadastro_post.js"></script>
 </body>
+
 </html>
