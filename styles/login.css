@@ -10,7 +10,6 @@ body {
 }
 
 header {
-    /* margin-top: 60px; */
     margin-bottom: 60px;
     padding: 15px;
     background-color: #062271;
@@ -53,7 +52,6 @@ main {
     max-width: 500px;
     min-width: 300px;
     margin: 0 auto;
-
 }    
 
 h2 {
@@ -69,7 +67,6 @@ form {
 
 .mb5 {
     margin-bottom: 5px;
-
 }    
 
 form label {
@@ -145,7 +142,6 @@ button {
     border: none;
     background-color: #FF6400;
     color: #fff;
-    margin-bottom: 30px;
 }    
 
 button:hover {
