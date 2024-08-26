@@ -1,138 +1,3 @@
-/* * {
-    margin: 0;
-    padding: 0;
-}
-
-a:visited {
-    color: inherit;
-}
-
-body {
-    background-color: #111111;
-    font-family: sans-serif;
-}
-
-header {
-    text-align: center;
-    padding-top: 75px;
-    margin-bottom: 60px;
-}
-
-header h1 {
-    color: #eee;
-    font-weight: bold;
-    font-size: 30px;
-}
-
-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.container {
-    background-color: #212328;
-    padding: 40px;
-    width: 75%;
-    max-width: 700px;
-    border-radius: 5px 5px 0 0;
-    border-top: 4px solid #005bb5;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-.title {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.title h2 {
-    font-weight: bold;
-    font-size: 18px;
-    margin: 10px;
-    color: #EEEEEE;
-}
-
-form {
-    margin-bottom: 15px;
-}
-
-form label {
-    display: block;
-    color: #EEEEEE;
-    margin-bottom: 5px;
-    font-size: 14px;
-}
-
-form input {
-    width: 100%;
-    padding: 10px;
-    background-color: #3D414A;
-    font-size: 16px;
-    font-style: italic;
-    border-radius: 6px;
-    border: none;
-    outline: none;
-    box-sizing: border-box;
-}
-
-form input:focus {
-    border: 2px solid #005bb5;
-    outline: none;
-}
-
-.mb20 {
-    margin-bottom: 20px;
-}
-
-.details {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-}
-
-form div input[type="checkbox"] {
-    width: auto;
-}
-
-.esqueceuSenha {
-    color: #0a83fc;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-button {
-    width: 100%;
-    padding: 12px;
-    background-color: #005bb5;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 15px;
-    font-weight: bold;
-}
-
-.novoUsuario {
-    display: flex;
-    justify-content: center;
-    background-color: #0b3bb3;
-}
-
-.novoUsuario span {
-    color: #ccc;
-    margin-top: 10px;
-    font-size: 14px;
-}
-
-.novoUsuario span a {
-    color: #0a83fc !important;
-    text-decoration: none;
-}
-
-.error {
-    color: red;
-} */
-
 * {
     margin: 0;
     padding: 0;
@@ -140,135 +5,179 @@ button {
 }
 
 body {
-    background-color: #111111;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
 }
 
 header {
-    text-align: center;
-    padding-top: 60px;
+    /* margin-top: 60px; */
     margin-bottom: 60px;
+    padding: 15px;
+    background-color: #062271;
+}
+
+header h1 {
+    color: #fff;
 }
 
 main {
+    justify-content: center;
+}    
+
+.text-center {
+    text-align: center;
+}
+
+.container-de-cima {
+    background-color: #E6F2FF;
+    border-top: 4px solid #FF6400;
+    border-radius: 5px 5px 0 0;
+}
+
+.container-de-baixo {
+    padding: 15px 0;
+    background-color: #0073e633;
+}
+
+.flex-col {
     display: flex;
     flex-flow: column;
+}
+
+.align-center {
     align-items: center;
-    justify-content: center;
 }
 
 .container {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
+    width: 50%;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
 
-    background-color: #212328;
-    width: 30%;
-    max-width: 700px;
-    min-width: 500px;
-
-    border-top: 4px solid #005bb5;
-    border-radius: 5px 5px 0 0;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
-}
+}    
 
 h2 {
     font-weight: bold;
-    font-size: 18px;
-    color: #fff;
-    margin: 18px;
-}
+    font-size: 20px;
+    color: #000;
+    margin: 30px auto;
+}    
 
 form {
-    display: flex;
-    flex-flow: column;
     width: 80%;
-}
+}    
 
 .mb5 {
     margin-bottom: 5px;
 
-}
+}    
 
 form label {
     display: block;
     font-size: 14px;
-}
+    user-select: none;
+}    
 
 form input {
     display: block;
-    width: 100%;
+    width: calc(100% - 20px);
     border: none;
-    outline: none;
     border-radius: 5px;
-    padding: 10px 0;
+    padding: 10px;
     font-style: italic;
     font-size: 14px;
-    background-color: #3D414A;
+}    
+
+.outlineError:focus {
+    outline: 2px solid #FF6400;
 }
 
-form input::placeholder {
-    padding: 10px;
-    color: #9c9da0;
-}
+.outline:focus {
+    outline: 2px solid #005bb5;
+}    
 
-form input:focus {
-    border: 2px solid #005bb5;
+.mb10 {
+    margin-bottom: 10px;
 }
 
 .mb20 {
     margin-bottom: 20px;
+}    
+
+.mb30 {
+    margin-bottom: 30px;
 }
 
 .details {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
-}
+}    
 
 .details input[type="checkbox"] {
     width: auto;
-}
+}    
 
 .rememberMe {
     display: flex;
     flex-flow: row-reverse;
     justify-content: center;    
     gap: 5px;
-}
+}    
 
 a {
     text-decoration: none;
     font-size: 14px;
-    color: #1e7fe0;
+    color: #FF6400;
+}    
+
+a:hover {
+    text-decoration: underline;
 }
 
 a:visited {
-    color: #1e7fe0;
-}
+    color: #FF6400;
+}    
 
 button {
     padding: 10px;
     border-radius: 5px;
     border: none;
-    background-color: #005bb5;
+    background-color: #FF6400;
     color: #fff;
     margin-bottom: 30px;
-}
+}    
 
 button:hover {
     cursor: pointer;
-}
+}    
 
-.containerDeBaixo {
-    text-align: center;
-    padding: 15px 0;
-    background-color: #2E2F37;
-    width: 30%;
-    max-width: 700px;
-    min-width: 500px
-}
-
-.containerDeBaixo span {
+.container-de-baixo span {
     font-size: 14px;
+}
+
+.error {
+    font-size: 14px;
+    color: #FF6400;
+    user-select: none;
+}
+
+.instructionMessage span {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+.confirmationMessage {
+    width: 80%;
+    padding: 10px 0;
+    background-color: #5fb35f;
+    border-top: 3px solid #308830;
+}
+
+.invisible {
+    display: none;}
+
+.visible {
+    display: block;
 }
