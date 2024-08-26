@@ -124,10 +124,14 @@ button:hover {
 
 a {
     text-decoration: none;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: bold;
     color: #FF6400;
 }    
+
+div a {
+    font-size: 18px;
+}
 
 a:hover {
     text-decoration: underline;
