@@ -152,6 +152,7 @@ table {
 table, th, td {
     border: 1px solid #b3d1ff;
     font-size: 15px;
+    word-break: break-word;
 }
 
 td {
