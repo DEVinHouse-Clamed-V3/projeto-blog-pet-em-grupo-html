@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/login.css">
+    <title>recuperacao de senha</title>
+</head>
+
+<body>
+    <header class="text-center">
+        <a href="index.html">
+            <h1>Pet Blog</h1>
+        </a>
+
+    </header>
+    <main class="flex-col align-center">
+        <section class="container container-de-cima align-center flex-col">
+            <h2>Esqueceu sua senha?</h2>
+
+            <form id="forgotPasswordForm" class="flex-col" autocomplete="off">
+                <div class="mb10">
+                    <label class="mb5" for="emailPasswordForm">E-mail</label>
+                    <input class="outline" type="email" id="emailPasswordForm" placeholder="Informe o seu e-mail">
+                    <span class="error" id="errorEmailPasswordForm"></span>
+                </div>
+
+                <div class="details mb30">
+                    <a href="login.html">« Voltar para o login </a>
+                </div>
+
+                <button type="submit">Entrar</button>                
+            </form>
+        </section>
+
+        <section class="container container-de-baixo text-center flex-col">
+            <div class="instructionMessage text-center">
+                <span>Insira seu endereço de e-mail e enviaremos instruções sobre como criar uma nova senha.</span>
+            </div>
+        </section>
+
+    </main>
+</body>
+<script src="./scripts/recuperacao_senha.js"></script>
+
+</html>
