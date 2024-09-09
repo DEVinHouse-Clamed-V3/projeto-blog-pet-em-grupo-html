@@ -1,12 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
-</head>
-<body>
-    
-</body>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post</title>
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/verPosts.css" />
+  </head>
+  <body>
+    <div class="container">
+        <h1 id="titulo"></h1>
+        <div class="img-container">
+            <img class="post-img" id="foto"/>
+        </div>
+        <hr />
+        <p class="content-description" id="descricao">
+        </p>
+        <hr />
+        <div class="container-end">
+          <button class="btn-voltar" id="botao">Voltar</button>
+          <div class="container-category">
+            <p class="created-in">Criado em: <span id="data-criacao"></span></p>
+            <p class="post-category">#<span id="categoria">categoria</span></p>
+          </div>
+        </div>
+    </div>
+
+    <script src="scripts/ver_post.js"></script>
+  </body>
 </html>
