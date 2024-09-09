@@ -1,2 +1,16 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/rFLCC26F)
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=15572086&assignment_repo_type=AssignmentRepo)
+# Blog de Pets 🐾
+Este projeto faz parte do curso DevinHouse oferecido pelo Lab365 do SENAI, patrocinado pela Clamed, e desenvolvido na semana 06 do primeiro módulo do curso.
+
+## Descrição do Projeto
+É uma aplicação simples funcional que permite aos usuários a criação de contas, login, e postagem de conteúdos relacionados a animais de estimação.
+
+## Tecnologias Utilizadas
+- JavaScript
+- HTML
+- CSS
+
+## Contribuições
+- Tela de Login: [p-skipper](https://github.com/p-skipper)
+- Tela de Cadastro de Usuários: [Douglas-Devin](https://github.com/Douglas-Devin)
+- Home de Posts: [fabcuri](https://github.com/fabcuri)
+- Tela de Visualização de Posts: [fetrojan](https://github.com/fetrojan)

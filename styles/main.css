@@ -1,51 +1,116 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f8ff;
+* {
     margin: 0;
     padding: 0;
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: #000;
+}
+
+header {
+    margin-bottom: 60px;
+    padding: 15px;
+    background-color: #062271;
+}
+
+header h1 {
+    color: #fff;
+    text-align: center;
+}
+
+main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    flex-flow: column;
 }
 
 .container {
-    background-color: #e6f2ff;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    width: 50%;
+    max-width: 800px;
+    min-width: 300px;
+    margin: 0 auto;
+    background-color: #E6F2FF;
+    border-top: 4px solid #FF6400;
+    border-radius: 5px 5px 0 0;
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+    box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.3);
+}    
+
+.topo-tabela {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-h1 {
-    text-align: center;
-    color: #005f99;
+h2 {
+    font-weight: bold;
+    font-size: 20px;
+    color: #000;
+    margin: 30px auto;
 }
 
-.form-group {
-    margin-bottom: 15px;
-}
-
-.form-group label {
-    display: block;
-    color: #003366;
+.mb5 {
     margin-bottom: 5px;
+}    
+
+.mb10 {
+    margin-bottom: 10px;
 }
 
-.form-group input, 
-.form-group textarea, 
-.form-group select {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #b3d1ff;
+.mb20 {
+    margin-bottom: 20px;
+}    
+
+.mb30 {
+    margin-bottom: 30px;
+}
+
+form {
+    width: 90%;
+}    
+
+form label {
+    display: block;
+    font-size: 14px;
+    user-select: none;
+    margin-bottom: 5px;
+}    
+
+form input,
+form textarea {
+    display: block;
+    width: calc(100% - 20px);
+    border: none;
     border-radius: 5px;
-    box-sizing: border-box;
+    padding: 10px;
+    font-style: italic;
+    font-size: 14px;
+}   
+
+form select {
+    display: block;
+    width: calc(100%);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+}
+
+input:focus,
+textarea:focus {
+    outline: 2px solid #005bb5;
 }
 
 button {
     width: 100%;
     padding: 10px;
-    background-color: #0073e6;
+    background-color: #FF6400;
     color: white;
     border: none;
     border-radius: 5px;
@@ -53,44 +118,61 @@ button {
 }
 
 button:hover {
-    background-color: #005bb5;
+    cursor: pointer;
 }
+
+a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #FF6400;
+}    
+
+div a {
+    font-size: 18px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #FF6400;
+}    
 
 
 /* */
 
-.container {
-    background-color: #e6f2ff;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-    width: 90%;
-    max-width: 800px;
-}
-
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
 }
 
 table, th, td {
     border: 1px solid #b3d1ff;
+    font-size: 15px;
+    word-break: break-word;
 }
 
-th, td {
+td {
     padding: 10px;
     text-align: center;
+    background-color: #CCE3FA;
+    max-width: 150px;
+    white-space: nowrap;
+    text-overflow: clip;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 th {
-    background-color: #0073e6;
-    color: white;
+    background-color: #005bb5;
+    color: #fff;
+    padding: 6px 4px;
 }
 
 button.delete-btn {
-    background-color: #ff4d4d;
+    background-color: #FF6400;
     color: white;
     border: none;
     border-radius: 5px;
@@ -99,9 +181,5 @@ button.delete-btn {
 }
 
 button.delete-btn:hover {
-    background-color: #cc0000;
+    background-color: #dd4600;
 }
-
-
-/* CSS menu */
-
